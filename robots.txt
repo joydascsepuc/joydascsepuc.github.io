@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://joydascsepuc.github.io/sitemap.xml
