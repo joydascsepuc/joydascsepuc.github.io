@@ -251,6 +251,7 @@
                 document.querySelector(modalbox),
                 {
                     onShow: function(instance) {
+                        document.body.classList.add('modal-open');
                         //detect Escape key press
                         document.addEventListener("keydown", function(event) {
                             event = event || window.event;
@@ -258,6 +259,9 @@
                                 instance.close();
                             }
                         });
+                    },
+                    onClose: function(instance) {
+                        document.body.classList.remove('modal-open');
                     }
                 }
             )
